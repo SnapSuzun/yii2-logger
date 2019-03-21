@@ -1,0 +1,42 @@
+{
+  "name": "snapsuzun/yii2-logger",
+  "description": "Logger for Yii2 that can write to Logstash, file and etc. Also it extend base yii\\log\\Target to send logs from default Yii2 logger to Logstash.",
+  "keywords": [
+    "yii2",
+    "logger",
+    "log",
+    "logstash",
+    "file",
+    "target"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Georgii Nevzorov",
+      "email": "nevzorovgosha@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "*",
+    "psr/log": "*",
+    "yiisoft/yii2-httpclient": "^2.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "snapsuzun\\yii2logger\\": "src"
+    }
+  },
+  "suggest": {
+    "yiisoft/yii2-queue": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
