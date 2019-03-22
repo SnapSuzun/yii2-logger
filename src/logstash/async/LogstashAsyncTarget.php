@@ -43,6 +43,7 @@ class LogstashAsyncTarget extends LogstashTarget
                     'host' => $this->host,
                     'port' => $this->port,
                     'transportType' => $this->transportType,
+                    'connectionTimeout' => $this->connectionTimeout
                 ]
             ]));
         }

@@ -44,6 +44,7 @@ class LoggerAsync extends Logger
                 'port' => $this->port,
                 'defaultTags' => $this->defaultTags,
                 'transportType' => $this->transportType,
+                'connectionTimeout' => $this->connectionTimeout
             ]
         ]));
     }
