@@ -7,7 +7,7 @@ use yii\base\Event;
 
 /**
  * Class CreateLogEvent
- * @package app\components\log\events
+ * @package snapsuzun\yii2logger\events
  */
 class CreateLogEvent extends Event
 {

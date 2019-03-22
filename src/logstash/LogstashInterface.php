@@ -4,7 +4,7 @@ namespace snapsuzun\yii2logger\logstash;
 
 /**
  * Interface LogstashInterface
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash
  */
 interface LogstashInterface
 {

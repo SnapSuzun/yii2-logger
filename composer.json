@@ -23,7 +23,8 @@
     "yiisoft/yii2": "*",
     "psr/log": "*",
     "yiisoft/yii2-httpclient": "^2.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-curl": "*"
   },
   "autoload": {
     "psr-4": {

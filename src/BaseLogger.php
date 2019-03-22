@@ -9,7 +9,7 @@ use yii\helpers\VarDumper;
 
 /**
  * Class BaseLogger
- * @package app\components\log
+ * @package snapsuzun\yii2logger
  */
 abstract class BaseLogger extends Component implements LoggerInterface
 {

@@ -6,7 +6,7 @@ use Psr\Log\LogLevel;
 
 /**
  * Interface LoggerInterface
- * @package app\components\log
+ * @package snapsuzun\yii2logger
  */
 interface LoggerInterface extends \Psr\Log\LoggerInterface
 {

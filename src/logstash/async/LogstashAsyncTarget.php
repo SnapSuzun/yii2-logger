@@ -9,7 +9,7 @@ use yii\queue\Queue;
 
 /**
  * Class LogstashAsyncTarget
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash\async
  */
 class LogstashAsyncTarget extends LogstashTarget
 {

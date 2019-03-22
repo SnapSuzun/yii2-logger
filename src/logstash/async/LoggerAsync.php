@@ -7,9 +7,9 @@ use yii\di\Instance;
 use yii\queue\Queue;
 
 /**
- * Асинхронное сохранение логов с помощью очередей
+ * Asynchronously log saving through yii2 queue's
  * Class LoggerAsync
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash\async
  */
 class LoggerAsync extends Logger
 {

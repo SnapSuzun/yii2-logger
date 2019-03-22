@@ -10,7 +10,7 @@ use yii\helpers\VarDumper;
 
 /**
  * Class Logger
- * @package app\components\log\file
+ * @package snapsuzun\yii2logger\file
  */
 class Logger extends BaseLogger
 {

@@ -8,7 +8,7 @@ use yii\log\Target;
 
 /**
  * Class LogstashTarget
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash
  */
 class LogstashTarget extends Target implements LogstashInterface
 {

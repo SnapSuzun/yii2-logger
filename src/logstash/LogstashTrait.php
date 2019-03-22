@@ -8,7 +8,7 @@ use yii\httpclient\CurlTransport;
 
 /**
  * Trait LogstashTrait
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash
  */
 trait LogstashTrait
 {
@@ -38,6 +38,11 @@ trait LogstashTrait
     public $logIndex = '';
 
     /**
+     * @var int
+     */
+    public $connectionTimeout = 5;
+
+    /**
      * @var string
      */
     public $transportType = LogstashInterface::TRANSPORT_HTTP;
@@ -59,7 +64,10 @@ trait LogstashTrait
                     ->setMethod('PUT')
                     ->setUrl($url)
                     ->setFormat(Client::FORMAT_JSON)
-                    ->setData($data);
+                    ->setData($data)
+                    ->setOptions([
+                        CURLOPT_CONNECTTIMEOUT => $this->connectionTimeout
+                    ]);
                 if ($this->user && $this->password) {
                     $httpRequest->setHeaders(['authorization' => 'Basic ' . base64_encode("{$this->user}:{$this->password}")]);
                 }
@@ -67,7 +75,7 @@ trait LogstashTrait
                 return $response->isOk;
                 break;
             case LogstashInterface::TRANSPORT_SOCKET:
-                $fp = fsockopen($this->host, $this->port ?: -1, $errorNumber, $error, 30);
+                $fp = fsockopen($this->host, $this->port ?: -1, $errorNumber, $error, $this->connectionTimeout);
                 $data['@index'] = $this->logIndex;
                 $bytes = fwrite($fp, json_encode($data));
                 fclose($fp);

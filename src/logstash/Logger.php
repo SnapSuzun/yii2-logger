@@ -8,7 +8,7 @@ use yii\base\InvalidConfigException;
 
 /**
  * Class Logger
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash
  */
 class Logger extends BaseLogger implements LogstashInterface
 {

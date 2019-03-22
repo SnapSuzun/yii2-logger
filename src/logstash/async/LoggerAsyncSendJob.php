@@ -11,7 +11,7 @@ use yii\queue\Queue;
 
 /**
  * Class LoggerAsyncSendJob
- * @package app\components\log\logstash
+ * @package snapsuzun\yii2logger\logstash\async
  */
 class LoggerAsyncSendJob extends BaseObject implements JobInterface
 {
